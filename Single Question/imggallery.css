@@ -1,0 +1,62 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  .header {
+    background-color: #179ce3;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  .header-title {
+    margin: 0;
+  }
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  
+  .thumbnail {
+    width: calc(33.33% - 10px); /* Each thumbnail takes up one-fifth of the available width with some spacing */
+
+    height: 300px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    overflow: hidden; /* Ensure uniform size for each thumbnail */
+  }
+  
+  .thumbnail img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .lightbox {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .lightbox img {
+    max-width: 90%;
+    max-height: 90%;
+  }
+  
+  .close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+  }
+  
